@@ -128,3 +128,39 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+dist
+
+# node_modules
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+/.pnp
+.pnp.js
+
+
+# testing
+/coverage
+
+# production
+build
+
+# misc
+.DS_Store
+.env
+.env.sh
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# uploads
+/src/api/uploads/*.png
+/src/api/uploads/*.jpg
+/src/api/uploads/*.svg
+/src/api/uploads/*.pdf
+S/src/api/uploads/*.docx
+/src/api/uploads/*.doc
+/src/api/uploads/*.md

@@ -1,2 +1,2 @@
 # Trace_Scrapper1
-Scraper for TRACE (Telegram)
+Scraper for TRACE (For social platforms)
