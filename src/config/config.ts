@@ -6,6 +6,9 @@ const envVarsSchema = Joi.object()
     NODE_ENV: Joi.string().valid('production', 'development', 'test').required(),
     PORT: Joi.number().default(3000),
     MONGODB_URL: Joi.string().required().description('Mongo DB url'),
+    TelegramScrapper: Joi.string().description('Scrapper for Telegram'),
+    RedditScrapper: Joi.string().description('Scrapper for Reddit'),
+    TwitterScrapper: Joi.string().description('Scrapper for Twitter')
   })
   .unknown();
 
@@ -49,7 +52,10 @@ const config = {
     },
     from: envVars.EMAIL_FROM,
   },
-  clientUrl: envVars.CLIENT_URL
+  clientUrl: envVars.CLIENT_URL,
+  TelegramScrapper: envVars.TelegramScrapper,
+  RedditScrapper: envVars.RedditScrapper,
+  TwitterScrapper: envVars.TwitterScrapper
 };
 
 export default config;

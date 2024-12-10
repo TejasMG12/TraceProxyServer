@@ -1,10 +1,10 @@
 {
-  "name": "VCT",
+  "name": "trace",
   "version": "1.0",
-  "description": "VCT-backend",
+  "description": "Trace-backend",
   "main": "dist/index.js",
   "bin": "bin/createNodetsApp.cjs",
-  "repository": "https://github.com/TejasMG12/VCT-Backend.git",
+  "repository": "https://github.com/TejasMG12/Trace_Scrapper1.git",
   "author": "Tejas",
   "license": "nill",
   "type": "module",
@@ -146,6 +146,7 @@
     "swagger-ui-express": "^5.0.1",
     "validator": "^13.7.0",
     "winston": "^3.3.3",
+    "ws": "^8.18.0",
     "xss-clean": "^0.1.4",
     "yarn": "^1.22.21"
   },

@@ -26,9 +26,6 @@ const corsOptions = {
   origin: [
     'http://localhost',
     'http://localhost:5173',
-    'https://server.margati.com',
-    'https://garuda-responder.vercel.app',
-    'https://www.margati.com',
   ],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
@@ -60,5 +57,7 @@ if (config.env === 'production') {
   app.use('/v1/auth', authLimiter);
 }
 app.use('/', routes);
+
+
 
 export default app;
